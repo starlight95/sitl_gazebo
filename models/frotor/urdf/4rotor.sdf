@@ -1,0 +1,233 @@
+<sdf version='1.6'>
+  <model name='4-rotot'>
+    <link name='base_link'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>-0.88383 -1.9e-05 0.008878 0 -0 0</pose>
+        <mass>33.188</mass>
+        <inertia>
+          <ixx>1.2422</ixx>
+          <ixy>-0.00034013</ixy>
+          <ixz>-0.010256</ixz>
+          <iyy>7.5059</iyy>
+          <iyz>0.00041364</iyz>
+          <izz>8.6405</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://4-rotot/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://4-rotot/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <link name='rotor_0'>
+      <pose frame=''>-0.2365 0.278 0.073 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>-0.64733 -0.27802 -0.064122 0 -0 0</pose>
+        <mass>33.188</mass>
+        <inertia>
+          <ixx>1.2422</ixx>
+          <ixy>-0.00034013</ixy>
+          <ixz>-0.010256</ixz>
+          <iyy>7.5059</iyy>
+          <iyz>0.00041364</iyz>
+          <izz>8.6405</izz>
+        </inertia>
+      </inertial>
+      <collision name='rotor_0_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://4-rotot/meshes/rotor_0.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rotor_0_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://4-rotot/meshes/rotor_0.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rotor_joint0' type='revolute'>
+      <child>rotor_0</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='rotor_1'>
+      <pose frame=''>-1.4565 -0.472 0.07 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0.57267 0.47198 -0.061122 0 -0 0</pose>
+        <mass>33.188</mass>
+        <inertia>
+          <ixx>1.2422</ixx>
+          <ixy>-0.00034013</ixy>
+          <ixz>-0.010256</ixz>
+          <iyy>7.5059</iyy>
+          <iyz>0.00041364</iyz>
+          <izz>8.6405</izz>
+        </inertia>
+      </inertial>
+      <collision name='rotor_1_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://4-rotot/meshes/rotor_1.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rotor_1_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://4-rotot/meshes/rotor_1.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rotor_joint1' type='revolute'>
+      <child>rotor_1</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='rotor_2'>
+      <pose frame=''>-0.2365 -0.278 0.07 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>-0.64733 0.27798 -0.061122 0 -0 0</pose>
+        <mass>33.188</mass>
+        <inertia>
+          <ixx>1.2422</ixx>
+          <ixy>-0.00034013</ixy>
+          <ixz>-0.010256</ixz>
+          <iyy>7.5059</iyy>
+          <iyz>0.00041364</iyz>
+          <izz>8.6405</izz>
+        </inertia>
+      </inertial>
+      <collision name='rotor_2_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://4-rotot/meshes/rotor_2.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rotor_2_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://4-rotot/meshes/rotor_2.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rotor_joint2' type='revolute'>
+      <child>rotor_2</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='rotor_3'>
+      <pose frame=''>-1.4565 0.472 0.073 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0.57267 -0.47202 -0.064122 0 -0 0</pose>
+        <mass>33.188</mass>
+        <inertia>
+          <ixx>1.2422</ixx>
+          <ixy>-0.00034013</ixy>
+          <ixz>-0.010256</ixz>
+          <iyy>7.5059</iyy>
+          <iyz>0.00041364</iyz>
+          <izz>8.6405</izz>
+        </inertia>
+      </inertial>
+      <collision name='rotor_3_collision'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://4-rotot/meshes/rotor_3.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='rotor_3_visual'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://4-rotot/meshes/rotor_3.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='rotor_joint3' type='revolute'>
+      <child>rotor_3</child>
+      <parent>base_link</parent>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+  </model>
+</sdf>

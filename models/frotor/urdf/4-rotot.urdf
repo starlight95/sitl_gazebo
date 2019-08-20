@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.0-0-g9aa0fdb  Build Version: 1.5.7004.21443
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="4-rotot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.88383 -1.9125E-05 0.0088779"
+        rpy="0 0 0" />
+      <mass
+        value="33.188" />
+      <inertia
+        ixx="1.2422"
+        ixy="-0.00034013"
+        ixz="-0.010256"
+        iyy="7.5059"
+        iyz="0.00041364"
+        izz="8.6405" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4-rotot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4-rotot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="rotor_0">
+    <inertial>
+      <origin
+        xyz="-0.64733 -0.27802 -0.064122"
+        rpy="0 0 0" />
+      <mass
+        value="33.188" />
+      <inertia
+        ixx="1.2422"
+        ixy="-0.00034013"
+        ixz="-0.010256"
+        iyy="7.5059"
+        iyz="0.00041364"
+        izz="8.6405" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4-rotot/meshes/rotor_0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4-rotot/meshes/rotor_0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_joint0"
+    type="continuous">
+    <origin
+      xyz="-0.2365 0.278 0.073"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_0" />
+    <axis
+      xyz="0 0 1" />
+    <safety_controller
+      k_velocity="0" />
+  </joint>
+  <link
+    name="rotor_1">
+    <inertial>
+      <origin
+        xyz="0.57267 0.47198 -0.061122"
+        rpy="0 0 0" />
+      <mass
+        value="33.188" />
+      <inertia
+        ixx="1.2422"
+        ixy="-0.00034013"
+        ixz="-0.010256"
+        iyy="7.5059"
+        iyz="0.00041364"
+        izz="8.6405" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4-rotot/meshes/rotor_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4-rotot/meshes/rotor_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_joint1"
+    type="continuous">
+    <origin
+      xyz="-1.4565 -0.472 0.07"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_1" />
+    <axis
+      xyz="0 0 1" />
+    <safety_controller
+      k_velocity="0" />
+  </joint>
+  <link
+    name="rotor_2">
+    <inertial>
+      <origin
+        xyz="-0.64733 0.27798 -0.061122"
+        rpy="0 0 0" />
+      <mass
+        value="33.188" />
+      <inertia
+        ixx="1.2422"
+        ixy="-0.00034013"
+        ixz="-0.010256"
+        iyy="7.5059"
+        iyz="0.00041364"
+        izz="8.6405" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4-rotot/meshes/rotor_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4-rotot/meshes/rotor_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_joint2"
+    type="continuous">
+    <origin
+      xyz="-0.2365 -0.278 0.07"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_2" />
+    <axis
+      xyz="0 0 1" />
+    <safety_controller
+      k_velocity="0" />
+  </joint>
+  <link
+    name="rotor_3">
+    <inertial>
+      <origin
+        xyz="0.57267 -0.47202 -0.064122"
+        rpy="0 0 0" />
+      <mass
+        value="33.188" />
+      <inertia
+        ixx="1.2422"
+        ixy="-0.00034013"
+        ixz="-0.010256"
+        iyy="7.5059"
+        iyz="0.00041364"
+        izz="8.6405" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4-rotot/meshes/rotor_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://4-rotot/meshes/rotor_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rotor_joint3"
+    type="continuous">
+    <origin
+      xyz="-1.4565 0.472 0.073"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rotor_3" />
+    <axis
+      xyz="0 0 1" />
+    <safety_controller
+      k_velocity="0" />
+  </joint>
+</robot>
